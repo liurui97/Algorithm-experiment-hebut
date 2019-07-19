@@ -1,0 +1,457 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SUANFASETS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SUANFASETS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SUANFASETS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SUANFASETS 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SUANFASETS_DIALOG DIALOGEX 0, 0, 636, 333
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SUANFASETS"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,622,319
+END
+
+IDD_DIALOG_ClosestPair DIALOG DISCARDABLE  0, 0, 468, 237
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,346,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "递归计算",IDC_BUTTON_Calculate,357,7,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,29,454,153
+    PUSHBUTTON      "非递归计算",IDC_BUTTON_NCalculate,411,7,50,14
+    EDITTEXT        IDC_EDIT2,7,187,454,43,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CycleRace DIALOG DISCARDABLE  0, 0, 462, 229
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,281,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile,294,7,50,14
+    PUSHBUTTON      "二维",IDC_BUTTON_Calculate,349,7,50,14
+    EDITTEXT        IDC_EDIT_FileContent,7,25,448,40,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_Result,7,72,448,150,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "一维",IDC_BUTTON_Calculate1,405,7,50,14
+END
+
+IDD_DIALOG_DongTaiTSP DIALOG DISCARDABLE  0, 0, 469, 243
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpeFile,357,7,50,14
+    EDITTEXT        IDC_EDIT1,7,7,344,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,412,7,50,14
+    EDITTEXT        IDC_EDIT2,7,25,455,36,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "List1",IDC_LIST_DongTaiTSP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,67,455,125
+    EDITTEXT        IDC_EDIT3,7,194,455,42,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_DongTai01 DIALOG DISCARDABLE  0, 0, 463, 229
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,156,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile1,166,7,50,14
+    EDITTEXT        IDC_EDIT2,220,7,126,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile2,351,7,50,14
+    EDITTEXT        IDC_EDIT3,7,23,211,47,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT4,221,23,235,47,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "List1",IDC_LIST_DongTai01,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,75,449,103
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,406,7,50,14
+    EDITTEXT        IDC_EDIT5,7,184,449,38,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_TanXinTSP DIALOG DISCARDABLE  0, 0, 476, 231
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,353,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile,365,7,50,14
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,419,7,50,14
+    EDITTEXT        IDC_EDIT2,7,25,462,37,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,69,462,104
+    EDITTEXT        IDC_EDIT3,7,180,462,44,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_TanXinDuoJi DIALOG DISCARDABLE  0, 0, 460, 229
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "作业个数：",IDC_STATIC,10,10,41,8
+    LTEXT           "机器个数：",IDC_STATIC,227,10,41,8
+    EDITTEXT        IDC_EDIT1,56,7,164,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,274,7,179,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile,346,25,50,14
+    EDITTEXT        IDC_EDIT5,56,25,285,14,ES_AUTOHSCROLL
+    LTEXT           "处理时间：",IDC_STATIC,10,28,41,8
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,403,24,50,14
+    EDITTEXT        IDC_EDIT8,7,44,446,28,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,78,446,99
+    EDITTEXT        IDC_EDIT3,7,179,446,43,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_HuiSuTSP DIALOG DISCARDABLE  0, 0, 459, 228
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,335,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile,347,7,50,14
+    PUSHBUTTON      "计算",IDC_BUTTON_Calulate,402,7,50,14
+    EDITTEXT        IDC_EDIT2,7,25,445,41,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,7,73,445,148,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG_TanXinBeibao DIALOG DISCARDABLE  0, 0, 475, 231
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile,163,7,50,14
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,418,7,50,14
+    EDITTEXT        IDC_EDIT2,7,28,212,33,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,7,65,461,159,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT4,216,7,147,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTONOpenFile2,366,7,50,14
+    EDITTEXT        IDC_EDIT5,225,28,243,31,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG_HuiSu01 DIALOG DISCARDABLE  0, 0, 457, 223
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,167,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile1,178,7,50,14
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,400,7,50,14
+    EDITTEXT        IDC_EDIT2,7,25,221,46,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,7,75,443,141,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT4,231,7,112,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile2,346,7,50,14
+    EDITTEXT        IDC_EDIT5,232,25,218,45,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG_FenZhiTSP DIALOG DISCARDABLE  0, 0, 463, 228
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,332,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile,343,7,50,14
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,406,7,50,14
+    EDITTEXT        IDC_EDIT2,7,24,449,47,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,7,76,449,145,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG_FenZhi01 DIALOG DISCARDABLE  0, 0, 470, 242
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,181,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile1,191,7,50,14
+    EDITTEXT        IDC_EDIT2,245,7,100,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OpenFile2,349,7,50,14
+    PUSHBUTTON      "计算",IDC_BUTTON_Calculate,413,7,50,14
+    EDITTEXT        IDC_EDIT3,7,26,234,41,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,255,26,208,40,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,7,71,456,164,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SUANFASETS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SUANFASETS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SUANFASETS.EXE\0"
+            VALUE "ProductName", "SUANFASETS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SUANFASETS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 629
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 326
+    END
+
+    IDD_DIALOG_ClosestPair, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 461
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_DIALOG_CycleRace, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 455
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DIALOG_DongTaiTSP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 462
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_DIALOG_DongTai01, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DIALOG_TanXinTSP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 469
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_DIALOG_TanXinDuoJi, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DIALOG_HuiSuTSP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_DIALOG_TanXinBeibao, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_DIALOG_HuiSu01, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 450
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_DIALOG_FenZhiTSP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_DIALOG_FenZhi01, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 463
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SUANFASETS(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SUANFASETS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

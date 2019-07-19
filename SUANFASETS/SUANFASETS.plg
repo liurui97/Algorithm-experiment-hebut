@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SUANFASETS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\刘蕊\AppData\Local\Temp\RSP9E92.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SUANFASETS.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Software162class\Study\大三下学期\算法\SHIYAN\SUANFASETS\DongTaiTSP.cpp"
+]
+Creating command line "cl.exe @"C:\Users\刘蕊\AppData\Local\Temp\RSP9E92.tmp"" 
+Creating temporary file "C:\Users\刘蕊\AppData\Local\Temp\RSP9E93.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SUANFASETS.pdb" /debug /machine:I386 /out:"Debug/SUANFASETS.exe" /pdbtype:sept 
+".\Debug\ClosestPair.obj"
+".\Debug\CycleRace.obj"
+".\Debug\DongTai01.obj"
+".\Debug\DongTaiTSP.obj"
+".\Debug\FenZhi01Bag.obj"
+".\Debug\FenZhiTSP.obj"
+".\Debug\HuiSu01.obj"
+".\Debug\HuiSuTSP.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SUANFASETS.obj"
+".\Debug\SUANFASETSDlg.obj"
+".\Debug\TanXinBeibao.obj"
+".\Debug\TanXinDuoji.obj"
+".\Debug\TanXinTSP.obj"
+".\Debug\SUANFASETS.res"
+]
+Creating command line "link.exe @"C:\Users\刘蕊\AppData\Local\Temp\RSP9E93.tmp""
+<h3>Output Window</h3>
+Compiling...
+DongTaiTSP.cpp
+E:\Software162class\Study\大三下学期\算法\SHIYAN\SUANFASETS\DongTaiTSP.cpp(18) : warning C4035: 'GetCyCount' : no return value
+Linking...
+LINK : warning LNK4076: invalid incremental status file "Debug/SUANFASETS.ilk"; linking nonincrementally
+
+
+
+<h3>Results</h3>
+SUANFASETS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
